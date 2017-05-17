@@ -1,0 +1,38 @@
+Contact Xuefei Yan xy33@phy.duke.edu for support
+
+Main code: test_polrad_radiate_xyrad2d.f
+POLRAD: polsig.f
+RADIATE: sigrad.f
+XYRAD2D: xyrad2d.f
+
+Peter Bosted F1F2 model: F1F209_FAST.f
+g1 g2 model collection: g1g2types.f; including MAID, DSSV, GRSV, JAM
+cross section collection: inelas_xs.f
+
+Simpson integration subroutine: haprad_utils.f
+
+Target nucleus, rad length and material setting in data_common_const.inp
+
+Method to run: see main code
+To compile: make
+To clean make clean
+
+Preferred enviroument setting (example):
+LHAPDF lib is needed for g1g2 models
+
+export ROOTSYS=/xtmp/Source/root_534_wmin2/root
+#export LD_LIBRARY_PATH=$ROOTSYS/lib:/xtmp/local/lib/:/xtmp/local/lib/root:$LD_LIBRARY_PATH
+source $ROOTSYS/bin/thisroot.sh
+export PATH=${ROOTSYS}/bin:${ANALYZER}:${PATH}
+export LHAPDFSYS=/var/phy/project/mepg/tl190/LHAPDF
+export PATH=${PATH}:${LHAPDFSYS}/bin
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${LHAPDFSYS}/lib
+export LHAPATH=/var/phy/project/mepg/tl190/LHAPDF/share/LHAPDF
+
+
+
+
+
+
+
+
