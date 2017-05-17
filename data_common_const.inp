@@ -1,0 +1,10 @@
+        real*8 Aset,Zset
+        real*8 Asir,Zsir
+        real*8 Taset,Tbset
+
+        PARAMETER (Aset=3.)
+        PARAMETER (Zset=2.)
+        PARAMETER (Asir=1.)
+        PARAMETER (Zsir=2.)
+        PARAMETER (Taset=0.0)
+        PARAMETER (Tbset=0.0)

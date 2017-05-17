@@ -1,0 +1,25 @@
+      REAL*8 ALPH,EMASS,xb,XM
+      REAL   hbc2,HBARC
+      real*4 res_x,res_y,res_th,res_ph
+      REAL   xoff,yoff,zoff
+
+      PARAMETER( ALPH      = 1./137.035999  )
+      PARAMETER( EMASS     = 0.511          )
+      PARAMETER( hbc2      = 0.389379       ) ! GeV^2-mbarn
+      PARAMETER( HBARC     = 197.327053     ) ! MeV-FM
+
+      PARAMETER( XM        = 931.494        ) ! Mass of the nucleon
+      PARAMETER( xb        =  4./3.         ) ! A45
+
+C HRS Wire chamber resolutions (half width at one sigma.)
+
+      PARAMETER( res_x     = 0.013	    ) !cm
+      PARAMETER( res_y     = 0.013	    ) !cm
+      PARAMETER( res_th    = 0.3	    ) !mr
+      PARAMETER( res_ph    = 0.3	    ) !mr
+
+C Beam position offsets 3.775 GeV, 9 degrees.
+	
+      PARAMETER( xoff      = 0.0            )!5957 !cm
+      PARAMETER( yoff      = 0.0            )!2985 !cm
+      PARAMETER( zoff      = -0.109         ) ! cm foil position offset
